@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>News Network</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <div id="topall">
+      <div id="datepicker">
+        <input type="date" class="date" id="start-date" required />
+        <button id="submitStartDate">Submit</button>
+        <input type="date" class="date" id="end-date" required />
+        
+      </div>
+
+      <div class="topnav">
+        <!-- <spam id="home-content">Test</span> -->
+        <a id="latest-news" href="">Latest News</a>
+
+        <select class="dropdown"> </select>
+        <div class="search-container">
+          <select class="languagedropdown"></select>
+          <select class="regiondropdown"></select>
+          <form>
+            <input
+              id="searches"
+              type="text"
+              placeholder="Search.."
+              name="search"
+            />
+            <button id="submit" type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script type="x-template" id="banner-template"></script>
+    <div id="alert" class="alert" role="alert">
+      Site best viewed on mobile. <br />
+      Click on Latest news to get the latest stories,<br />
+      Select a category, your language, region <br />or use our search to find what you're looking
+      for!
+      <span class="banner-close"></span>
+    </div>
+  </script>
+    <div class="main">
+    </div>
+  </body>
+</html>
